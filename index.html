@@ -13,13 +13,13 @@
 </head>
 
 <body>
-    <header class="head-up">
-       <div class="conthead container">
+   <header class="head-up">
+      <div class="conthead container">
         <nav class="navi">
-             <a class="logo" href="./index.html">Web<span class="akcent">Studio</span></a>
+          <a class="logo" href="./index.html">Web<span class="akcent">Studio</span></a>
              <ul class="nav-list">
                 <li class="nav-list-el">
-                    <a href="./index.html" class="nav-list-item first-element">Studio</a>
+                    <a href="./index.html" class="nav-list-item first-item">Studio</a>
                 </li>
                 <li class="nav-list-el">
                     <a href="" class="nav-list-item">Portfolio</a>
@@ -28,22 +28,80 @@
                     <a href="" class="nav-list-item">Contacts</a>
                 </li>
              </ul>
-        </nav>
-        
-         <address class="adress">
-            <ul class="adress-ul">
-                 <li class="item">
+        </nav> 
+          <address class="address">
+            <ul class="address-ul">
+                 <li class="address-item">
                     <a class="contact" id="info" href="mailto:info@devstudio.com">info@devstudio.com</a>
                  </li>
-                 <li class="item">
+                 <li class="address-item">
                     <a class="contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
+            </ul> 
+          </address>
+        <button class="mob-button-open" type="button">-</button>
+      </div>
+    <div class="menu-mobile visually-hidden">
+      <button class="mob-button-close" type="button">x</button>
+          <nav class="mob-navi">
+            <ul class="mob-navi-list">
+              <li class="mob-list-el">
+                <a href="./index.html" class="mob-list-item studio-item">Studio</a>
+             </li>
+              <li class="mob-list-el">
+                <a href="" class="mob-list-item">Portfolio</a>
+              </li>
+              <li class="mob-list-el">
+                <a href="" class="mob-list-item">Contacts</a>
+              </li>
             </ul>
-        </address>
-       </div>
-    </header>
+          </nav>
+         <div class="mob-menu-div visually-hidden">
+          <address class="mob-address">
+            <ul class="mob-address-ul">
+              <li class="mob-item">
+                <a class="mob-contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-item">
+                <a class="mob-contact mob-mail" id="info" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+            <ul class="mob-social-ul">
+              <li class="social-icons-elem">
+                <a class="social-link" href="">
+                  <svg class="social-icon" width=24 height=24>
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-elem">
+                <a class="social-link" href="">
+                  <svg class="social-icon" width=24 height=24>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-elem">
+                <a class="social-link" href="">
+                  <svg class="social-icon" width=24 height=24>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-elem">
+                <a class="social-link" href="">
+                  <svg class="social-icon" width=24 height=24>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+         </div>
+    </div>
+  </header>
 
-    <main class="main">
+   <main class="main">
         <section class="sect-main">
             <div class="sec-cont container">
               <h1 class="title">Effective Solutions for Your Business</h1>
@@ -57,7 +115,7 @@
             <ul class="about-ul">
               <li class="about-li">
                 <div class="icon-wraper">
-                <svg class="icon-element" width=64 height=64>
+              <svg class="icon-element" width=64 height=64>
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
                 </div>
@@ -65,8 +123,8 @@
                 <p class="text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
               </li>
               <li class="about-li">
-                <div class="icon-wraper">
-                    <svg class="icon-element" width=64 height=64>
+                 <div class="icon-wraper">
+                  <svg class="icon-element" width=64 height=64>
                     <use href="./images/icons.svg#icon-clock-1" ></use>
                   </svg>
                 </div>
@@ -74,8 +132,8 @@
                 <p class="text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
               </li>
               <li class="about-li">
-                <div class="icon-wraper">
-                  <svg class="icon-element" width=64 height=64>
+               <div class="icon-wraper">
+                 <svg class="icon-element" width=64 height=64>
                     <use href="./images/icons.svg#icon-diagram-1"></use>
                   </svg>
                 </div>
@@ -83,8 +141,8 @@
                 <p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
               </li>
               <li class="about-li">
-                <div class="icon-wraper">
-                  <svg class="icon-element" width=64 height=64>
+              <div class="icon-wraper">
+              <svg class="icon-element" width=64 height=64>
                     <use href="./images/icons.svg#icon-astronaut-1"></use>
                   </svg>
                 </div>
@@ -93,9 +151,9 @@
               </li>
             </ul>
             </div>
+
         </section>
-        
-        <section class="sect-team">
+      <section class="sect-team">
             <div class="container group">
             <h2 class="team-title" id="ourteam">Our Team</h2>
             <ul class="list">
@@ -249,8 +307,8 @@
                 </li>
             </ul>
             </div>
-        </section>
-        <section class="portfolio">
+     </section>
+  <!--   <section class="portfolio">
           <div class="container port">
              <h2 class="our-port" id="porfol">Our Portfolio</h2>
              <ul class="port-ul">
@@ -338,10 +396,10 @@
                 </li>
              </ul>
           </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer class="foot">
+ <!--<footer class="foot">
       <div class="container foot-cont-div">
         <div class="foot-container">
           <a class="logo" href="./index.html">Web<span class="akcent">Studio</span></a>
@@ -394,8 +452,8 @@
           </form>
         </div>
       </div>
-    </footer>
-
+    </footer> -->
+<!-- 
   <div class="backdrop is-open">
     <div class="modal">
          <button class="modal-close-btn" type="button">
@@ -450,7 +508,7 @@
          <button type="submit" class="send-button">Send</button>
       </form>
     </div>
-  </div>
+  </div> -->
 </body>
 
 </html>
