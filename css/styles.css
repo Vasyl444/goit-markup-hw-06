@@ -52,9 +52,11 @@ h3 {color: #2E2F44;
 
 .mob-button-open {
     display: block;
-    width: 24px;
-    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
+.mob-open-icon {fill: 2F2F37;}
 .logo {
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
