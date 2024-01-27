@@ -22,13 +22,11 @@ body {font-family: "Roboto", sans-serif;
     font-style: normal;
      }
 
-ul {list-style-type: none;}
 h3 {color: #2E2F44;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;}
-
 
 /*======HEADER======*/
 .container {
@@ -40,6 +38,7 @@ h3 {color: #2E2F44;
     border-bottom: 1px solid  #E7E9FC;
     background-color:  #FFF;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    position: relative;
 }
 
 .nav-list, .address {display: none;}
@@ -85,14 +84,23 @@ h3 {color: #2E2F44;
     justify-content: space-between;
 }
 .mob-button-close {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     margin-left: auto;
     margin-bottom: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.10);
 }
+
 .mob-navi {margin-bottom: 25px;}
-.mob-list-el:not(:last-child) {
-    margin-bottom: 40px;
+.mob-navi-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .mob-list-item {
@@ -103,14 +111,11 @@ h3 {color: #2E2F44;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-.studio-item {
+.mob-studio-item {
     color: #404BBF;
 }
-.mob-menu-div {
-    display: flex;
-    flex-direction: column;
-    gap :48px;
-    margin-top: auto;
+.mob-address {
+    margin-bottom: 48px;
 }
 .mob-address-ul {
     display: flex;
@@ -131,19 +136,31 @@ h3 {color: #2E2F44;
     display: flex;
     gap: 40px;
 }
+.mob-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 50%;
+}
 
 /*=====H1111=====*/
 
 .sect-main {
     padding: 72px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/dark-bgmob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 320px;
     margin: 0 auto;
 }
-
+@media (min-resolution: 192dpi) {
+    .sect-main {background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/dark-bgmob2.jpg);}
+}
 .sec-cont {
     display: flex;
     flex-direction: column;
@@ -184,7 +201,8 @@ h3 {color: #2E2F44;
         max-width: 768px;
     }
 
-    .mob-button-open {
+    .mob-button-open,
+    .menu-mobile {
         display: none;
     }
 
@@ -227,6 +245,9 @@ h3 {color: #2E2F44;
         bottom: -1px;
         display: block;
     }
+    .studio-item {
+            color: #404BBF;
+        }
 
     .address {
         display: block;
@@ -330,18 +351,6 @@ h3 {color: #2E2F44;
 /*.about {padding: 120px 0;}*/
 .about {
     padding: 96px 0;
-}
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 .about-ul {
     display: flex;
@@ -914,8 +923,6 @@ h3 {color: #2E2F44;
     }
 .send-button:hover, 
 .sevd-button:focus {background: #404BBF;}*/
-        
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -928,8 +935,9 @@ h3 {color: #2E2F44;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .is-open {
-     opacity: 1;
     visibility: visible;
+    opacity: 1;
     pointer-events: auto;
 }
