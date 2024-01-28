@@ -29,6 +29,7 @@ h3 {color: #2E2F44;
     letter-spacing: 0.02em;
     text-align: center;
 }
+input {all: unset;}
 
 /*======HEADER======*/
 .container {
@@ -357,6 +358,7 @@ h3 {color: #2E2F44;
     text-align: center;
     padding: 0;
     margin-bottom: 16px;
+    padding: 0;
 }
 .foot-container .akcent {
     color: #f4f4fd;
@@ -368,7 +370,7 @@ h3 {color: #2E2F44;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.footer-p {
+.footer-paragraf {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
@@ -391,7 +393,53 @@ h3 {color: #2E2F44;
     background-color: #4D5AE5;
     border-radius: 50%;
 }
-.subscribe-paragraf {}
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.email-input {
+    color: #FFFFFF;
+    min-width: 270px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: inherit;
+    opacity: 0.3;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+}
+.email-input:focus {
+    opacity: 1;
+}
+.email-input::placeholder {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+.foot-div-btn {
+    width: 165px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
 /*=====TABLET=====*/
 
 @media screen and (min-width: 768px) {
@@ -411,6 +459,7 @@ h3 {color: #2E2F44;
 
 .logo {
     margin-right: 120px;
+    padding: 0;
 }
 
 .nav-list {
@@ -522,7 +571,27 @@ h3 {color: #2E2F44;
 .elements {width: calc((100% - 24px) / 2);}
 
 /*=====FOOTER==768===*/
-
+.foot-cont-div {
+    padding-left: 108px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.foot-container .logo {
+    text-align: start;
+}
+.footer-paragraf {
+    text-align: start;
+}
+.email-form {
+    flex-direction: row;
+    gap: 24px;
+}
+.email-input {
+    min-width: 246px;
+}
 }
 
 /*====COMPUTER=====*/
@@ -691,19 +760,14 @@ h3 {color: #2E2F44;
 .foot {
     background-color: #2e2f42;
     padding: 100px 0;
-    display: flex;
+}
+.foot-cont-div
+
 }
 
-}
 
 
-/*=====FOOTER=====*/
-
-/*.foot { 
-    background-color: #2e2f42;
-    padding: 100px 0;
-    display: flex;
-    }
+/*.
 
 .foot-container .logo {
     display: inline-block;
