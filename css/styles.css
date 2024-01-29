@@ -162,7 +162,7 @@ input {all: unset;}
     margin: 0 auto;
 }
 @media (min-resolution: 192dpi) {
-    .sect-main {background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/dark-mob-2-min.jpg);}
+.sect-main {background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/dark-mob-2-min.jpg);}
 }
 .sec-cont {
     display: flex;
@@ -818,10 +818,10 @@ input {all: unset;}
     }
 /*=====H1=1158====*/
 
-        .sect-main {
-            padding: 188px 0;
-            max-width: 1440px;
-            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+    .sect-main {
+        padding: 188px 0;
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
         }
 @media (min-resolution: 192dpi) {
     .sect-main {
